@@ -38,7 +38,9 @@ envs:
   operatorApiUrl: "http://postgres-operator:8080"
   operatorClusterNameLabel: "cluster-name"
   resourcesVisible: "False"
-  targetNamespace: "default"
+  # Namespace for which PostgreSQL resources should be displayed in the UI interface.
+  # Use an asterisk '*' as wildcard.
+  targetNamespace: "*"
 
 # configure UI service
 service:
